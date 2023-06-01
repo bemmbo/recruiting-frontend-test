@@ -1,5 +1,7 @@
 ## Things To Do
 
+For View Results [LINK](https://benbohmer-hzfwrf8l1-josefredes.vercel.app)
+
 Here are some improvements that could be made in the future:
 
 1. **Switch to TypeScript**: Due to time constraints, the project is currently written in JavaScript. Converting to TypeScript could provide more robust type checking and could help catch potential bugs earlier.
@@ -12,6 +14,11 @@ Here are some improvements that could be made in the future:
 
 5. **Fix table selection behavior**: Currently, the selector of the first table remains selected when continuing to assign invoices. This behavior should be modified so that the selector does not stay selected.
 
+6. **Add typings for useState**: The useState hooks currently lack typings. Adding typings would provide stronger type checking and increase the robustness of the code.
+
+7. **Improve button and table behavior**: The behavior of buttons and tables could be better managed. This could involve tweaking interaction effects, changing how data is loaded and displayed, or refining the user experience in other ways.
+
+8. **Consider adding alerts**: Alerts could be used to provide immediate feedback to users or to handle errors more gracefully.
 
 # Getting Started with Create React App
 
