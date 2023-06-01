@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { getPendingInvoices } from '../Api/apiClient';
+import { getPendingInvoices } from '../api/apiClient';
 import lodash from 'lodash';
-import {CreditNoteModal} from './CreditNoteModal';
-import {InvoiceTable} from './InvoiceTable';
-import {CreditNoteTable} from './CreditNoteTable';
+import { CreditNoteModal } from './CreditNoteModal';
+import { InvoiceTable } from './InvoiceTable';
+import { CreditNoteTable } from './CreditNoteTable';
 
 export function Bills() {
   const [bills, setBills] = useState([]);
@@ -32,7 +32,9 @@ export function Bills() {
 
   return (
     <div className='flex flex-col mt-10 justify-center items-center'>
-      <h1 className='mb-4 text-xl font-bold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-4xl dark:text-black'>Selecciona una factura</h1>
+      <h1 className='mb-4 text-xl font-bold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-4xl dark:text-black'>
+        Selecciona una factura
+      </h1>
       <div className='flex flex-col'>
         <div className='overflow-x-auto'>
           <div className='p-1.5 w-full inline-block align-middle'>
@@ -40,7 +42,12 @@ export function Bills() {
               <InvoiceTable bills={bills} handleClick={handleClick} />
             </div>
           </div>
-          {selectedNote && <CreditNoteTable selectedNote={selectedNote} setAssignedNote={setAssignedNote} />}
+          {selectedNote && (
+            <CreditNoteTable
+              selectedNote={selectedNote}
+              setAssignedNote={setAssignedNote}
+            />
+          )}
         </div>
       </div>
       {Object.entries(assignedNote).length > 0 && (
@@ -51,11 +58,11 @@ export function Bills() {
           Asignar
         </button>
       )}
-      <CreditNoteModal 
-        assignedNote={assignedNote} 
-        openModal={openModal} 
-        setOpenModal={setOpenModal} 
-        handleClose={handleClose} 
+      <CreditNoteModal
+        assignedNote={assignedNote}
+        openModal={openModal}
+        setOpenModal={setOpenModal}
+        handleClose={handleClose}
       />
     </div>
   );

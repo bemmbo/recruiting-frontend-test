@@ -1,7 +1,12 @@
 import React from 'react';
-import { parseAmount } from '../Utils/parseCurrency';
+import { parseAmount } from '../utils/parseCurrency';
 
-export const CreditNoteModal = ({ assignedNote, openModal, setOpenModal, handleClose }) => {
+export const CreditNoteModal = ({
+  assignedNote,
+  openModal,
+  setOpenModal,
+  handleClose,
+}) => {
   return (
     openModal && (
       <div className='fixed inset-0 flex items-center justify-center bg-black bg-opacity-50'>
@@ -17,7 +22,7 @@ export const CreditNoteModal = ({ assignedNote, openModal, setOpenModal, handleC
             </p>
             <p>
               <span className='font-bold'>Monto: </span>
-              {parseAmount(assignedNote.amount)}
+              {parseAmount(assignedNote.amount, assignedNote.currency)}
             </p>
           </div>
           <button
