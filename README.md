@@ -1,6 +1,6 @@
 ## Things To Do
 
-For View Results [LINK](https://benbohmer-hzfwrf8l1-josefredes.vercel.app)
+For View Results [LINK](https://benbohmer.vercel.app/)
 
 Here are some improvements that could be made in the future:
 
