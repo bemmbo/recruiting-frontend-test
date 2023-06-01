@@ -1,3 +1,18 @@
+## Things To Do
+
+Here are some improvements that could be made in the future:
+
+1. **Switch to TypeScript**: Due to time constraints, the project is currently written in JavaScript. Converting to TypeScript could provide more robust type checking and could help catch potential bugs earlier.
+
+2. **Create a modular table component**: The current implementation has separate components for different tables. By creating a single table component that is customizable, we could reduce code duplication and increase the flexibility of our table displays.
+
+3. **Refactor TODOs**: There are some TODO comments left in the code that need to be addressed. This could involve fixing minor bugs, optimizing code, or implementing new features.
+
+4. **Improve front-end styling**: The current UI could use some improvements in terms of its aesthetic appeal. This could involve changing the color scheme, adjusting layouts, or creating new UI elements.
+
+5. **Fix table selection behavior**: Currently, the selector of the first table remains selected when continuing to assign invoices. This behavior should be modified so that the selector does not stay selected.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
