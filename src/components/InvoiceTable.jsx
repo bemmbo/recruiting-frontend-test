@@ -9,6 +9,7 @@ export const InvoiceTable = ({ bills, handleClick }) => {
     setSelectedId(id);
   };
 
+  //TODO refactor ternary operator with transaltion to a utils function
   return (
     <div className='overflow-hidden border rounded-lg'>
       <table className='min-w-full divide-y divide-gray-200'>
