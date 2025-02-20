@@ -5,6 +5,7 @@ import { ChevronDoubleRightIcon } from "@heroicons/react/outline";
 import "./App.css";
 import { TableWithCheckboxes } from "./components/tableWithCheckboxes";
 import { LoadingTable } from "./components/loadingTable";
+import { Modal } from "./components/modal";
 
 function App() {
   const [invoices, setInvoices] = useState([]);
@@ -169,6 +170,7 @@ function App() {
                 >
                   Asignar
                 </button>
+                <Modal isOpen={isModalOpen} setIsOpen={setIsModalOpen}/>
               </div>
             </div>
           )}
